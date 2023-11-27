@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-Blood Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="blood-bank-header">
+        <div class="logo">
+            <a href="Home.html">
+
+                <img src="img/l2.png" alt="Blood Bank Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Blood Donate</a></li>
+                <li><a href="#"> Campaign</a></li>
+                <li><a href="appoinment.html"> Appoinment</a></li>
+                <li><a href="Feadback.html">Feadback</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Register.html"> Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- ... (Previous HTML content) ... -->
+    <div class="appointment-form">
+        <h2>Schedule Your Appointment</h2>
+        <form id="appointment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time Slot:</label>
+            <select id="time" name="time" required>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <!-- Add more time slots as needed -->
+            </select>
+
+            <button type="submit" class="cta-button">Schedule Appointment</button>
+        </form>
+    </div>
+    <!-- ... (Remaining HTML content) ... -->
+
+
+    <footer>
+        <p>&copy; 2023 Blood Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

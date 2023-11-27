@@ -1,0 +1,443 @@
+Reset some default styles */ 
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(77, 74, 74);
+    background-color: #e6e0e0;
+}
+
+header {
+    color: #f0eeee;
+    text-align: left;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    text-align: right;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    
+    text-decoration: none;
+    color: #f4e8e8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ececec;
+}
+
+section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+.donor-registration, .blood-request, .contact {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c9302c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b02724;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+/* Add additional custom styles and adjustments as needed
+/* Styles for the Contact Us form */
+.contact form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form textarea {
+    min-height: 150px;
+}
+
+.contact form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c9302c;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #b02724;
+}
+
+/* Custom styling for the form heading */
+.contact h2 {
+    font-size: 24px;
+    color: #c9302c;
+    margin-bottom: 20px;
+}
+
+/* Additional custom styles to make the form more unique and visually appealing */
+/* Updated Styles for the Header */
+.blood-bank-header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blood-bank-header .logo img {
+    max-width: 250px; /* Adjust the logo size as needed */
+    height: auto;
+    width: 200px;
+    margin-left:90px;
+
+    
+}
+
+.blood-bank-header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.blood-bank-header nav ul {
+    list-style: none;
+    margin: auto;
+    padding: 10px;
+}
+
+.blood-bank-header nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.blood-bank-header nav a {
+    text-decoration: none;
+    color: #303030;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.blood-bank-header nav a:hover {
+    color: #d9534f;
+}
+
+/* Additional custom styles for the header or other sections as needed */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container,
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1,
+.register-container h1 {
+    font-size: 28px;
+    color: #f05a28;
+}
+
+.login-container form,
+.register-container form {
+    margin-top: 20px;
+}
+
+.login-container label,
+.register-container label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-container input,
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #f05a28;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.login-container button,
+.register-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f05a28;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+    background-color: #d44e23;
+}
+
+.login-container p,
+.register-container p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.login-container a,
+.register-container a {
+    color: #f05a28;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover,
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Additional custom styles for unique elements or enhancements */
+
+/*-----------------------------------------Appoinment------------------------*/
+
+/* Updated Styles for the Appointment Page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4e4c4c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+
+header nav a:hover {
+    color: #b02724;
+}
+
+.appointment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.appointment-form h2 {
+    font-size: 24px;
+    color: #c9302c;
+    margin: 0 0 20px;
+}
+
+.appointment-form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+    font-size: 16px;
+}
+
+.appointment-form input, .appointment-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.appointment-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c9302c;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.appointment-form button:hover {
+    background-color: #b02724;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    /* position: sticky;     */
+    bottom: 0px;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional custom styles as needed */
+img{
+    height: 500px;
+}
+
+
+/* Headline */
+
+
+
+.service{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    color: #350000;
+    font-weight: bolder;
+    animation-name: demo;
+    animation-duration: 2s;
+}
+
+.visit{
+    height: 100px;
+}
+/* card */
+.xy{
+    display: flex;
+    justify-content: space-evenly;
+}
+.item1:hover{
+    width: 260px;
+    text-shadow: #833d3d;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    /* font-size: larger; */
+}
+
+p , h5{
+    pointer-events: none;
+}
+
+
+

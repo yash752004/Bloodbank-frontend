@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-Blood Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/html5?f=brands&s=solid">
+    <link rel="stylesheet " href="https://fontawesome.com/icons/calendar-check?f=classic&s=regular">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            color: #706f6f;
+            /* font-size: 25px; */
+        }
+
+        .r {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            justify-content: center;
+            /* font-size: 25px; */
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="blood-bank-header">
+        <div class="logo">
+            <a href="Home.html">
+
+                <img src="img/l2.png" alt="Blood Bank Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Blood Donate</a></li>
+                <li><a href="#"> Campaign</a></li>
+                <li><a href="appoinment.html"> Appoinment</a></li>
+                <li><a href="Feadback.html">Feadback</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Register.html"> Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div class="main">
+            <div class="register-container ">
+                <h1>Register for Blood Bank</h1>
+                <form id="register-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="contact">Contact No.:</label>
+                    <input type="text" id="contact" name="contact" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="bloodType">BloodType:</label>
+                    <input type="text" id="bloodType" name="bloodType" required>
+
+                    <label for="Address">City:</label>
+                    <input type="" id="Address" name="Address" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" class="cta-button">Register</button>
+                </form>
+
+                <div class="bottom">
+
+                    <p>Already have an account? </p> <a class="r" href="login.html"> Login here</a>
+                </div>
+            </div>
+        </div>
+        <script src="register.js"></script>
+    </body>
+
+</html>

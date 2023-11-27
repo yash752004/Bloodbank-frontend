@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-Blood Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: #f3e1e1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            color: #fff;
+            /* display: flex; */
+            /* align-items: center;
+            justify-content: space-around; */
+            /* min-height: 100vh; */
+        }
+
+        img {
+            width: 500px;
+            height: 200px;
+        }
+
+        .page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* .input {
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        } */
+
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            color: #0d2230;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+
+        }
+
+        .input_container {
+            width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+            border: 10px solid #570000;
+
+            .input_container,
+            .input-row {
+                margin-bottom: 12px;
+
+            }
+
+        }
+
+        .input_container input:not([type="submit"]),
+        .input_container textarea {
+            width: 100%;
+            margin: 0 0 3px;
+            background-color: #d6d6d6;
+            color: #000;
+            padding: 10px 15px;
+            height: 50px;
+            line-height: 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            outline: 0;
+            transition: all 0.5s ease-out;
+        }
+
+
+        .input_container textarea {
+            height: 100px;
+            resize: none;
+
+        }
+
+        .input_container input:not([type="submit"]):focus,
+        .input_container textarea:focus {
+
+            border-color: #770303;
+        }
+
+        *::-webkit-input-placeholder {
+            opacity: 1;
+            color: #000;
+        }
+
+        .input_container input[type="submit"] {
+            padding: 10px 30px;
+            font-size: 18px;
+            line-height: 30px;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            background-color: #740808;
+            color: #fff;
+            border: 0;
+            transition: all 0.5s ease-out;
+            border-radius: 5px;
+
+        }
+
+
+        .input_container input[type="submit"]:hover {
+            background-color: #000;
+
+        }
+
+        label.error {
+            font-weight: 700;
+            display: block;
+            color: #f00;
+            font-size: 14px;
+
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            color: #706f6f;
+            font-size: 25px;
+        }
+
+        .r {
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            justify-content: center;
+            font-size: 25px;
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="blood-bank-header">
+        <div class="logo">
+            <a href="Home.html">
+
+                <img src="img/l2.png" alt="Blood Bank Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Blood Donate</a></li>
+                <li><a href="#"> Campaign</a></li>
+                <li><a href="appoinment.html"> Appoinment</a></li>
+                <li><a href="Feadback.html">Feadback</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Register.html"> Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class="page">
+            <div class="input_container">
+                <div class="logo">
+                    <img src="./img/Logo1.png" alt="">
+                </div>
+                <div class="input">
+                    <h1> Login as Donor</h1>
+                    <form name="formvalidation" id="formvalidation" action="valid.html">
+                        <!-- form fields -->
+                        <div class="input-row">
+                            <input type="email" name="name" placeholder="E-mail*" required>
+                        </div>
+                        <div class="input-row">
+                            <input type="password" name="email" placeholder="Password*" required>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="bottom">
+
+                    <p>Don't have account? </p><a class="r" href="Register.html">Register</a>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
+
+
+
+
+
+
+    <!-- <script>
+        $("#formvalidation").validate({
+            rules: {
+                name: {
+                    minlength: 2,
+                },
+                email: {
+                    email: true,
+                },
+                phone: {
+                    Number: true,
+                    minlength: 10,
+                    maxlenght: 10
+                }
+            },
+            messages: {
+                name: {
+                    required: "Enter Your Name",
+                    minlength: jQuery.validator.format("Please, at least {0} characters are necessary")
+                }
+            },
+            email: "Please Enter Your E-Mail",
+            Phone: "Please Enter Your Phone",
+
+
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+    </script>
+ -->
+
+
+</html>
